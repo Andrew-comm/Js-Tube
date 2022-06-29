@@ -68,6 +68,7 @@ const oldCompanies=companies.filter(company=>((company.end)-(company.start)>=10)
 console.log(oldCompanies);
 //map can be used to create a new array
 //create array of company names
+//can be used to manipulate data
 
 const companyNames=companies.map(function(company){
     return company.name;
@@ -81,6 +82,46 @@ return `${company.name}  [${company.start} - ${company.end}]`;
 });
 console.log(testMap);
 
+//sort
+//sort companies by start year
+const sortedCompanies=companies.sort(function(c1,c2){
+    if (c1.start>c2.start){
+        return 1;
+    }else{
+        return -1;
+    }
+});
+console.log(sortedCompanies);
+
+
+//cheaper alternative including the use of a ternary operator
+const newCompanies = companies.sort((a,b)=>((a.start)> (b.start)?1:-1));
+console.log(newCompanies);
+
+
+
+
+//sort ages
+const sortAges=ages.sort((a, b) => a - b);
+console.log(sortAges);
+
+//reduce
+//using for loop to get age sum
+//let ageSum=0;
+for(let i = 0; i>ages.length; i++) {
+    ageSum+=ages[i];
+}
+console.log(ageSum);
+
+//using reduce
+const ageTotal=ages.reduce(function(sum,age){
+    return sum + age;
+
+},0);
+console.log(ageTotal);
+
+const ageSum=ages.reduce(total,age=> total+age ,0);
+console.log(ageSum);
 
 
     
