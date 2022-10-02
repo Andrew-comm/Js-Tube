@@ -1,6 +1,6 @@
 
 console.log("hello");
-//alert("hello this is Andrew"); 
+alert("hello this is Andrew!"); 
 //variables
 var b = "smoothie";
 console.log(b);
@@ -16,7 +16,7 @@ console.log("someNumber");
  var num1 = 10;
 
  
- console.log(num1% 6);
+ console.log(num1 % 6);
  //functions
  //create a function 
  //call a function 
@@ -38,7 +38,7 @@ function greetings(){
 
 
 }
-//greetings();
+greetings();
 //how arguments work in function
 //how to add two numbers together in a function
 function sumNumbers(num1, num2){

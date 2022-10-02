@@ -29,6 +29,8 @@ companies.forEach(function(company) {
     console.log(company);
 });
 
+
+
 //filter->allows to filter things from an array.
 //comparison in code : Returns the same output
 //using for loop
@@ -74,6 +76,10 @@ const companyNames=companies.map(function(company){
     return company.name;
 
 });
+
+
+
+
 console.log(companyNames);
 
 const testMap = companies.map(function(company){
@@ -121,7 +127,7 @@ const ageTotal=ages.reduce(function(sum,age){
 console.log(ageTotal);
 
 const ageSum=ages.reduce(total,age=> total+age ,0);
-console.log(ageSum);
+console.log(ageSum)
 
 
     
