@@ -1,6 +1,6 @@
 
 console.log("hello");
-alert("hello this is Andrew!"); 
+//alert("hello this is Andrew!"); 
 //variables
 var b = "smoothie";
 console.log(b);
